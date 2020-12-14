@@ -1,0 +1,56 @@
+{
+	"name": "@mmstudio/au000001",
+	"version": "1.0.0",
+	"description": "发送Http请求",
+	"scripts": {
+		"test": "tsc -w",
+		"clean": "del-cli ./dist/",
+		"lint": "eslint ./src/**/*.ts",
+		"compile": "tsc",
+		"build": "npm run clean && npm run lint && npm run compile",
+		"up": "git pull git@github.com:mm-tpl/atom-uniapp.git main"
+	},
+	"repository": {
+		"type": "https+git",
+		"url": "https://github.com/mm-atom/au000001.git"
+	},
+	"homepage": "https://mm-works.github.io",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"keywords": [
+		"mm",
+		"mmstudio",
+		"蛮蛮",
+		"蛮蛮工作室",
+		"插件式",
+		"原子操作",
+		"控件",
+		"框架"
+	],
+	"author": {
+		"name": "taoqf",
+		"email": "tao_qiufeng@126.com"
+	},
+	"maintainers": [
+		{
+			"name": "taoqf",
+			"email": "tao_qiufeng@126.com"
+		}
+	],
+	"license": "MIT",
+	"dependencies": {
+		"mini-types": "^0.1.4",
+		"miniprogram-api-typings": "^3.2.0"
+	},
+	"devDependencies": {
+		"@dcloudio/types": "^2.0.19",
+		"@typescript-eslint/eslint-plugin": "latest",
+		"@typescript-eslint/parser": "latest",
+		"del-cli": "latest",
+		"eslint": "latest",
+		"eslint-config-prettier": "latest",
+		"eslint-plugin-import": "latest",
+		"typescript": "next"
+	}
+}
